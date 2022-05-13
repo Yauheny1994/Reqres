@@ -1,5 +1,7 @@
 package odjects.reqres;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import lombok.Builder;
 import lombok.Data;
 
@@ -10,4 +12,8 @@ public class User {
     String job;
     String email;
     String password;
+    @SerializedName("first_name")
+    String firstName;
+    @SerializedName("last_name")
+    String lastName;
 }
